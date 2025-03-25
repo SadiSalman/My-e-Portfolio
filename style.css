@@ -952,21 +952,13 @@ p {
 	h1.section-title {
 		font-size: 6rem;
 	}
-
-	/* Home */
 	#home h1 {
 		font-size: 7rem;
 	}
-	/* End Home */
-
-	/* Skills Section */
 	#skills .skill-bottom .skill-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Skills Section */
-
-	/* Project */
 	#projects .project-item {
 		flex-direction: row;
 	}
@@ -985,9 +977,43 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	/* End Project */
+	#contact {
+        padding: 20px 10px;
+    }
 
-	/* About */
+    #contact .top-header h1 {
+        font-size: 1.8rem;
+    }
+
+    #contact .top-header span {
+        font-size: 1rem;
+    }
+
+    #contact .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #contact .contact-info,
+    #contact .form-control {
+        flex: none;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .input-field {
+        font-size: 1.2rem;
+    }
+
+    .text-area textarea {
+        font-size: 1.2rem;
+        height: 80px;
+    }
+
+    .form-button .btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
 	#about .about {
 		flex-direction: row;
 	}
@@ -1010,25 +1036,13 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
-
-	/* Education */
 	.education-box {
-        width: 100%; /* Full width on tablets or smaller screens */
+        width: 100%; 
     }
 
     #education-section h2 {
-        font-size: 2rem; /* Adjusted title size for smaller screens */
+        font-size: 2rem;
     }
-	/* End Education */
-
-	/* contact  */
-	#contact .row {
-        flex-direction: column;
-        gap: 10px;
-    }
-	/* End contact  */
-}
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
@@ -1087,6 +1101,29 @@ p {
 	#projects .project-link {
 		padding: 6px 12px;
 		font-size: 0.8rem;
+	}
+	#contact {
+        padding: 20px 10px;
+    }
+
+    #contact .top-header h1 {
+        font-size: 1.5rem;
+    }
+
+    #contact .top-header span {
+        font-size: 0.9rem;
+    }
+
+    #contact .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #contact .contact-info,
+    #contact .form-control {
+        flex: none;
+        width: 100%; /* Ensures elements take up full screen width */
+        padding: 10px;
 	}
 }
 /* End Media Query For Phone */
