@@ -9,6 +9,9 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll due to overflow */
+}
 a {
 	text-decoration: none;
 }
@@ -129,7 +132,7 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: black;
+	color: rgba(0, 0, 0, 0);
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
@@ -1035,14 +1038,15 @@ p {
 	}
 	#about .col-right h1 {
 		text-align: left;
+		}
+		.education-box {
+			width: 100%; 
+		}
+	
+		#education-section h2 {
+			font-size: 2rem;
+		}
 	}
-	.education-box {
-        width: 100%; 
-    }
-
-    #education-section h2 {
-        font-size: 2rem;
-    }
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
@@ -1103,27 +1107,36 @@ p {
 		font-size: 0.8rem;
 	}
 	#contact {
-        padding: 20px 10px;
-    }
-
-    #contact .top-header h1 {
-        font-size: 1.5rem;
-    }
-
-    #contact .top-header span {
-        font-size: 0.9rem;
+        padding: 20px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     #contact .row {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+        align-items: center;
     }
 
     #contact .contact-info,
     #contact .form-control {
-        flex: none;
-        width: 100%; /* Ensures elements take up full screen width */
+        width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .input-field,
+    textarea {
+        width: 100%;
         padding: 10px;
-	}
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-button .btn {
+        width: 100%;
+    }
 }
 /* End Media Query For Phone */
