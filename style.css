@@ -1102,6 +1102,12 @@ p {
     .education-box {
         width: 100%; /* Ensures proper stacking on narrow screens */
     }
+	.hamburger { 
+		display: block;
+	} 
+	.nav-list ul { 
+		flex-direction: column; 
+	} 
 	#projects .project-link {
 		padding: 6px 12px;
 		font-size: 0.8rem;
